@@ -7,13 +7,14 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-graph',
   standalone: true,
   imports: [RouterModule,CommonModule,MatCardModule
           ,MatFormFieldModule,MatButtonModule,MatToolbarModule,
-          MatIconModule,MatMenuModule],
+          MatIconModule,MatMenuModule,HttpClientModule],
   templateUrl: './graph.component.html',
   styleUrl: './graph.component.scss'
 })
