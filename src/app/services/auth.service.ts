@@ -5,14 +5,14 @@ import { Router } from "@angular/router";
 import { Observable, BehaviorSubject } from "rxjs";
 import { first, catchError, tap } from "rxjs/operators";
 
-import { User } from "../models/User"; 
+import { User } from "../models/User";
 import { ErrorHandlerService } from "./error-handler.service";
 
 @Injectable({
   providedIn: "root",
 })
 export class AuthService {
-  private url = "http://localhost:3000/auth";
+  private url = "https://back-01yq.onrender.com/auth";
 
   isUserLoggedIn$ = new BehaviorSubject<boolean>(false);
   userId: Pick<User, "aid"> | undefined;
