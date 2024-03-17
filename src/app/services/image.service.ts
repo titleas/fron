@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ImageService {
 
-  private apiUrl = 'http://localhost:3000/img';
+  private apiUrl = 'https://back-01yq.onrender.com/img';
 
   constructor(private http: HttpClient) { }
 
